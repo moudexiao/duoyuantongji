@@ -1,4 +1,4 @@
-''' python
+``` python
 import gzip
 def un_gz(file_name):
     #获取文件名，去掉后缀名
@@ -9,8 +9,9 @@ def un_gz(file_name):
     open(f_name,"wb+").write(g_file.read())
     g_file.close()
 un_gz('D:\D盘\Desktop\cvyuan-0.1.tar.gz')#绝对路劲
-''''
+```
 
+``` bash
 echo "# duoyuantongji" >> README.md
 git init
 git add README.md
@@ -23,3 +24,4 @@ git push -u origin main
 git remote add origin https://github.com/moudexiao/duoyuantongji.git
 git branch -M main
 git push -u origin main
+```
