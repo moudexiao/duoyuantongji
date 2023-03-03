@@ -12,6 +12,10 @@ un_gz('D:\D盘\Desktop\cvyuan-0.1.tar.gz')#绝对路劲
 ```
 
 ``` bash
+git config --global user.email "moudexiao@gamil.com"
+git config --global user.name "moudexiao"
+git config http.sslVertify false
+
 echo "# duoyuantongji" >> README.md
 git init
 git add README.md
