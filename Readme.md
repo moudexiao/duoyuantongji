@@ -25,3 +25,9 @@ git remote add origin https://github.com/moudexiao/duoyuantongji.git
 git branch -M main
 git push -u origin main
 ```
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
