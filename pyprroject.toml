@@ -4,9 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "example_package_YOUR_USERNAME_HERE"
-version = "0.0.9"
+version = "1.0.0"
 authors = [
-  { name="sudragin", email="author@example.com" },
+  { name="sudragin", email="2017614231@qq.com" },
 ]
 description = "A small example package"
 readme = "README.md"
@@ -16,7 +16,12 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies=[
+  "numpy",
+  "scikit-learn",
+]
+
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/moudexiao"
+"Bug Tracker" = "https://github.com/moudexiao/duoyuantongji/issues"
