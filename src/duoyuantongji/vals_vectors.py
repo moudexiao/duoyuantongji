@@ -1,42 +1,47 @@
-# import numpy as np
+'''
+Find the eigenvalues ​​and eigenvectors of a random matrix
+
+====
+
+For example 
+
+Input 25 integer data, then convert it into a 5X5 matrix, find its eigenvalues ​​and eigenvectors, 
+please refer to the sample for the correct input format, if the input format is not int or the number of inputs is wrong, 
+the output: the input has wrong!
 
 
-# def fun(a):
 
-#     a = a.split(" ")
-
-#     if len(a) != 25:
-#         print("输入有错！")
-
-#     else:
-#         try:
-#             a = [int(i) for i in a]
-#             a = [a[i:i + 5] for i in range(0, len(a), 5)]
-#         except:
-#             print("输入有错！")
-#         eig_vals, eig_vectors = np.linalg.eig(a)
-#         # return ''.join(str(eig_vals) + '\n'+str(eig_vectors))
-#         return (eig_vals, eig_vectors)
+Provides
+  1. An array object of arbitrary homogeneous items
+  2. Fast mathematical operations over arrays
+  3. Linear Algebra, Fourier Transforms, Random Number Generation
 
 
-# # str = '''1 2 3 4 5 6 7 8 9 10 1 2 1 3 14 12 12 14 1 4 5 7 8 9 23'''
-# # a = fun(str)
-# # print(a[0], '\n', a[1])
+How to use the documentation
+----------------------------
+Documentation is available in two forms: docstrings provided
+with the code, and a loose standing reference guide, available from
+`the NumPy homepage <https://www.scipy.org>`_.
+
+We recommend exploring the docstrings using
+`IPython <https://ipython.org>`_, an advanced Python shell with
+TAB-completion and introspection capabilities.  See below for further
+instructions.
+
+
+'''
 
 import numpy as np
 
+try:
+    a, b = np.linalg.eig(np.array([int(i)
+                         for i in input().split(' ')]).reshape(5, 5))
+    print(a, '\n', b)
+except:
+    print('输入有错！')
 
-def fun():
-    a = input().split(" ")
 
-    if len(a) != 25:
-        print("输入有错！")
-
-    else:
-        try:
-            a = [int(i) for i in a]
-            a = [a[i:i + 5] for i in range(0, len(a), 5)]
-        except:
-            print("输入有错！")
-        eig_vals, eig_vectors = np.linalg.eig(a)
-        print(eig_vals, '\n', eig_vectors)
+def println():
+    print(''' 
+    a,b = np.linalg.eig(np.array([int(i) for i in input().split(' ')]).reshape(5,5))
+    ''')
